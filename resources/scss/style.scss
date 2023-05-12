@@ -1,0 +1,95 @@
+$fa-font-path: "../webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+
+ol.list-decimal2 {
+    counter-reset: list !important;
+}
+
+ol.list-decimal2 > li {
+    list-style: none !important;
+}
+
+ol.list-decimal2 > li:before {
+    content: counter(list) ") " !important;
+    counter-increment: list !important;
+}
+
+ol.list-decimal3 {
+    counter-reset: list !important;
+}
+
+ol.list-decimal3 > li {
+    list-style: decimal !important;
+}
+
+ol.list-decimal3 > li:before {
+    counter-increment: list !important;
+}
+
+input[type='text'], input[type='date'], input[type='number'], input[type='email'] {
+    color: #1c1c1c !important;
+    border-color: #1c1c1c !important;
+    border-width: 2px !important;
+    padding: 3px;
+}
+input[type='checkbox'] {
+    color: #1c1c1c !important;
+    border-color: #1c1c1c !important;
+    border-width: 1px !important;
+    padding: 3px;
+}
+input[type='text']:disabled, input[type='date']:disabled, input[type='number']:disabled, input[type='email']:disabled {
+    color: #1c1c1c !important;
+    border-color: #1c1c1c !important;
+    border-width: 0px !important;
+    padding: 3px;
+}
+
+a.link {
+    color: #0000EE;
+}
+
+a.link:hover, a.link:active {
+    color: #551A8B;
+    text-decoration: underline;
+}
+
+#font-size-up:hover, #font-size-down:hover {
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+label {
+    display: inline-block;
+    width: fit-content;
+}
+
+.custom-button {
+    background-color: #618dd4;
+    color: #FFFFFF;
+}
+
+.color-blue {
+    background-color: #618dd4;
+    color: #FFFFFF;
+}
+
+.color-blue2 {
+    background-color: #4eaff5;
+    color: #FFFFFF;
+}
+
+.half {
+    width: 50%;
+    height: auto;
+}
+
+.error {
+    color: #e02424;
+    font-size: .875rem;
+    margin: 0;
+    margin-top: 0.5rem;
+}
